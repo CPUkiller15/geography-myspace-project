@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>💖 My Juicy Couture MySpace Geography Profile (trust me this toke awhile) 💖</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Glitter Cursor -->
+  <script>
+    document.addEventListener("mousemove", function(e) {
+      const sparkle = document.createElement("div");
+      sparkle.className = "cursor-sparkle";
+      sparkle.style.left = e.pageX + "px";
+      sparkle.style.top = e.pageY + "px";
+      document.body.appendChild(sparkle);
+      setTimeout(() => sparkle.remove(), 500);
+    });
+  </script>
+</head>
+
+<body class="profile-body">
+
+<!-- Floating Sparkles -->
+<div class="sparkle-container"></div>
+
+<script>
+function createSparkle() {
+  const sparkle = document.createElement("div");
+  sparkle.className = "sparkle";
+  sparkle.style.left = Math.random() * window.innerWidth + "px";
+  sparkle.style.animationDuration = (Math.random() * 4 + 4) + "s";
+  document.querySelector(".sparkle-container").appendChild(sparkle);
+  setTimeout(() => sparkle.remove(), 7000);
+}
+setInterval(createSparkle, 300);
+</script>
+
+<!-- Autoplay Music -->
+<audio autoplay loop>
+  <source src="YOUR-MP3-FILE.mp3" type="audio/mpeg">
+</audio>
+
+<div class="profile-wrapper">
+
+  <header class="profile-header">
+    <h1>💖 MySpace Profile: The 5 Themes of Geography 💖</h1>
+    <h2>By Maria Podlozhenova • 2 black</h2>
+    <p class="tagline">Juicy Couture ✨ Pink Glitter ✨ Geography Queen</p>
+  </header>
+
+  <!-- Charm Bracelet Navigation -->
+  <nav class="charm-nav">
+    <a href="index.html"><img src="https://i.imgur.com/8zF8X.gif"></a>
+    <a href="movement.html"><img src="https://i.imgur.com/7yZ8F.gif"></a>
+    <a href="region.html"><img src="https://i.imgur.com/2QxQF.gif"></a>
+    <a href="hei.html"><img src="https://i.imgur.com/9Yf8C.gif"></a>
+    <a href="location.html"><img src="https://i.imgur.com/5tF8X.gif"></a>
+    <a href="place.html"><img src="https://i.imgur.com/4yF8C.gif"></a>
+  </nav>
+
+  <div class="sparkle-divider"></div>
+
+  <section class="about-me">
+    <h3>✨ About Me ✨</h3>
+    <p>Heyyy! I’m Maria and this is my geography project, but like… cute.  
+    I made it look like a MySpace profile because honestly I miss 2006 and Juicy Couture tracksuits, like yk. Also i spent hours of my weeekend on this.</p>
+  </section>
+
+  <div class="sparkle-divider"></div>
+
+  <section class="theme-links">
+    <h3>💋 My Geography Pages 💋</h3>
+    <ul>
+      <li><a href="movement.html">Movement 💄</a></li>
+      <li><a href="region.html">Region 💅</a></li>
+      <li><a href="hei.html">Human–Environment Interaction 💘</a></li>
+      <li><a href="location.html">Location 🎀</a></li>
+      <li><a href="place.html">Place 👛</a></li>
+    </ul>
+  </section>
+
+  <div class="sparkle-divider"></div>
+
+  <!-- Comment Wall -->
+  <section class="comment-wall">
+    <h2>💬 Comment Wall 💬</h2>
+
+    <div class="comment">
+      <p class="user">✨ ParisHiltonFan2006 ✨</p>
+      <p>omg thanks for the add!! your profile is sooo cute 💖💖💖</p>
+    </div>
+
+    <div class="comment">
+      <p class="user">💋 JuicyCoutureBabe 💋</p>
+      <p>love your glitter aesthetic omg we should totally hang out 😍</p>
+    </div>
+
+    <div class="comment">
+      <p class="user">🎀 SceneQueenXx 🎀</p>
+      <p>ur layout is EVERYTHING. teach me ur ways pls 😭💗</p>
+    </div>
+
+    <div class="comment">
+      <p class="user">👛 PinkTracksuitPrincess 👛</p>
+      <p>ily bestie 💕 this is literally the cutest geography project ever</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Made with glitter, Juicy Couture, & MySpace vibes 💖</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
