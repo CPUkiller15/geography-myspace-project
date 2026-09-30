@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Location </title>
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    document.addEventListener("mousemove", function(e) {
+      const sparkle = document.createElement("div");
+      sparkle.className = "cursor-sparkle";
+      sparkle.style.left = e.pageX + "px";
+      sparkle.style.top = e.pageY + "px";
+      document.body.appendChild(sparkle);
+      setTimeout(() => sparkle.remove(), 500);
+    });
+  </script>
+</head>
+
+<body class="theme-body">
+
+<div class="sparkle-container"></div>
+
+<script>
+function createSparkle() {
+  const sparkle = document.createElement("div");
+  sparkle.className = "sparkle";
+  sparkle.style.left = Math.random() * window.innerWidth + "px";
+  sparkle.style.animationDuration = (Math.random() * 4 + 4) + "s";
+  document.querySelector(".sparkle-container").appendChild(sparkle);
+  setTimeout(() => sparkle.remove(), 7000);
+}
+setInterval(createSparkle, 300);
+</script>
+
+<div class="theme-wrapper">
+
+  <header class="theme-header">
+    <h1> Location </h1>
+    <p>Where something is — exactly or relatively.</p>
+  </header>
+
+  <nav class="charm-nav">
+    <a href="index.html"><img src="https://i.imgur.com/8zF8X.gif"></a>
+    <a href="movement.html"><img src="https://i.imgur.com/7yZ8F.gif"></a>
+    <a href="region.html"><img src="https://i.imgur.com/2QxQF.gif"></a>
+    <a href="hei.html"><img src="https://i.imgur.com/9Yf8C.gif"></a>
+    <a href="location.html"><img src="https://i.imgur.com/5tF8X.gif"></a>
+    <a href="place.html"><img src="https://i.imgur.com/4yF8C.gif"></a>
+  </nav>
+
+  <div class="sparkle-divider"></div>
+
+  <section class="theme-content">
+    <h2>What Location Means</h2>
+    <p>Location tells us where something is. Absolute = exact. Relative = compared to something else.</p>
+
+    <h3>Absolute Location</h3>
+    <p>Coordinates or an exact address.</p>
+
+    <h3>Relative Location</h3>
+    <p>“Near the mall
