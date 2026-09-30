@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Human–Environment Interaction </title>
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    document.addEventListener("mousemove", function(e) {
+      const sparkle = document.createElement("div");
+      sparkle.className = "cursor-sparkle";
+      sparkle.style.left = e.pageX + "px";
+      sparkle.style.top = e.pageY + "px";
+      document.body.appendChild(sparkle);
+      setTimeout(() => sparkle.remove(), 500);
+    });
+  </script>
+</head>
+
+<body class="theme-body">
+
+<div class="sparkle-container"></div>
+
+<script>
+function createSparkle() {
+  const sparkle = document.createElement("div");
+  sparkle.className = "sparkle";
+  sparkle.style.left = Math.random() * window.innerWidth + "px";
+  sparkle.style.animationDuration = (Math.random() * 4 + 4) + "s";
+  document.querySelector(".sparkle-container").appendChild(sparkle);
+  setTimeout(() => sparkle.remove(), 7000);
+}
+setInterval(createSparkle, 300);
+</script>
+
+<div class="theme-wrapper">
+
+  <header class="theme-header">
+    <h1> Human–Environment Interaction </h1>
+    <p>How humans and the environment affect each other.</p>
+  </header>
+
+  <nav class="charm-nav">
+    <a href="index.html"><img src="https://i.imgur.com/8zF8X.gif"></a>
+    <a href="movement.html"><img src="https://i.imgur.com/7yZ8F.gif"></a>
+    <a href="region.html"><img src="https://i.imgur.com/2QxQF.gif"></a>
+    <a href="hei.html"><img src="https://i.imgur.com/9Yf8C.gif"></a>
+    <a href="location.html"><img src="https://i.imgur.com/5tF8X.gif"></a>
+    <a href="place.html"><img src="https://i.imgur.com/4yF8C.gif"></a>
+  </nav>
+
+  <div class="sparkle-divider"></div>
+
+  <section class="theme-content">
+    <h2>What HEI Means</h2>
+    <p>We depend on nature, adapt to it, and change it. Sometimes we help it, sometimes we totally ruin it (oops).</p>
+
+    <h3>Depend</h3>
+    <p>We need water, air, land, and resources.</p>
+
+    <h3>Adapt</h3>
+    <p>We change our clothes, houses, and habits based on climate.</p>
+
+    <h3>Change</h3>
+    <p>We build roads, cities, farms, and more.</p>
+
+    <p class="personal"> Personal Connection: When kayaking with my dad, I depend on a car to bring my kayak to hylite and my moms car releys on roads.</p>
+  </section>
+
+  <footer class="footer">
+    <a href="index.html">⬅ Back to Profile</a>
+  </footer>
+
+</div>
+
+</body>
+</html>
