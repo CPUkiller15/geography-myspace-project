@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movement 💄</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    document.addEventListener("mousemove", function(e) {
+      const sparkle = document.createElement("div");
+      sparkle.className = "cursor-sparkle";
+      sparkle.style.left = e.pageX + "px";
+      sparkle.style.top = e.pageY + "px";
+      document.body.appendChild(sparkle);
+      setTimeout(() => sparkle.remove(), 500);
+    });
+  </script>
+</head>
+
+<body class="theme-body">
+
+<div class="sparkle-container"></div>
+
+<script>
+function createSparkle() {
+  const sparkle = document.createElement("div");
+  sparkle.className = "sparkle";
+  sparkle.style.left = Math.random() * window.innerWidth + "px";
+  sparkle.style.animationDuration = (Math.random() * 4 + 4) + "s";
+  document.querySelector(".sparkle-container").appendChild(sparkle);
+  setTimeout(() => sparkle.remove(), 7000);
+}
+setInterval(createSparkle, 300);
+</script>
+
+<div class="theme-wrapper">
+
+  <header class="theme-header">
+    <h1>💄 Movement 💄</h1>
+    <p>How people, stuff, and ideas get around — like me flying to NC every summer.</p>
+  </header>
+
+  <nav class="charm-nav">
+    <a href="index.html"><img src="https://i.imgur.com/8zF8X.gif"></a>
+    <a href="movement.html"><img src="https://i.imgur.com/7yZ8F.gif"></a>
+    <a href="region.html"><img src="https://i.imgur.com/2QxQF.gif"></a>
+    <a href="hei.html"><img src="https://i.imgur.com/9Yf8C.gif"></a>
+    <a href="location.html"><img src="https://i.imgur.com/5tF8X.gif"></a>
+    <a href="place.html"><img src="https://i.imgur.com/4yF8C.gif"></a>
+  </nav>
+
+  <div class="sparkle-divider"></div>
+
+  <section class="theme-content">
+    <h2>What Movement Means</h2>
+    <p>Movement is how everything travels — people, objects, and ideas.</p>
+
+    <h3>Movement of People</h3>
+    <ul>
+      <li>Taking a train from Boston to New York</li>
+      <li>Walking home from work</li>
+      <li>Me flying to Ohio each year. </li>
+    </ul>
+
+    <h3>Movement of Objects</h3>
+    <ul>
+      <li>Sending a package to a relative</li>
+      <li>Bringing groceries home from jeff bezozs store.(whole foods) </li>
+    </ul>
+
+    <h3>Movement of Ideas</h3>
+    <ul>
+      <li>Mailing a letter to my bestfriend after movinghere.</li>
+      <li>Sending a text</li>
+      <li>Posting online on tiktok (vidoes counts)</li>
+    </ul>
+
+    <p class="personal">💖 Personal Connection: Every year I fly to Ohio to visit my grandma.</p>
+  </section>
+
+  <footer class="footer">
+    <a href="index.html">⬅ Back to Profile</a>
+  </footer>
+
+</div>
+
+</body>
+</html>
