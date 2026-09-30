@@ -1,0 +1,174 @@
+/* Pink Heart Cursor */
+body {
+  cursor: url('https://i.imgur.com/0Zf7Y.png'), auto;
+  margin: 0;
+  padding: 0;
+  background: #ffccf2 url('https://i.imgur.com/7yZ8F.gif');
+  font-family: "Comic Sans MS", "Trebuchet MS", Arial;
+  color: #333;
+}
+
+/* Glitter Cursor Trail */
+.cursor-sparkle {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: url('https://i.imgur.com/7yZ8F.gif');
+  background-size: cover;
+  pointer-events: none;
+  animation: sparkleFade 0.5s linear forwards;
+}
+
+@keyframes sparkleFade {
+  from { opacity: 1; transform: scale(1); }
+  to { opacity: 0; transform: scale(0.3); }
+}
+
+/* Floating Sparkles */
+.sparkle-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.sparkle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url('https://i.imgur.com/2QxQF.gif');
+  background-size: cover;
+  animation: floatSparkle 6s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes floatSparkle {
+  from { transform: translateY(100vh) rotate(0deg); }
+  to { transform: translateY(-10vh) rotate(360deg); }
+}
+
+/* Sparkly Divider */
+.sparkle-divider {
+  width: 100%;
+  height: 40px;
+  background: url('https://i.imgur.com/2QxQF.gif') center no-repeat;
+  background-size: contain;
+  margin: 20px 0;
+}
+
+/* Charm Bracelet Navigation */
+.charm-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.charm-nav img {
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(0 0 5px #ff66c4);
+  transition: transform 0.2s ease;
+}
+
+.charm-nav img:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
+/* Comment Wall */
+.comment-wall {
+  background: #fff0fa;
+  border: 4px solid #ff66c4;
+  padding: 20px;
+  margin-top: 40px;
+  box-shadow: 0 0 15px #ff99d6;
+}
+
+.comment-wall h2 {
+  font-family: "Brush Script MT", cursive;
+  font-size: 2rem;
+  color: #ff1493;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.comment {
+  background: #ffe6f7;
+  border-left: 5px solid #ff66c4;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.comment .user {
+  font-weight: bold;
+  color: #cc007a;
+  margin-bottom: 5px;
+}
+
+/* Layout for profile and theme pages */
+.profile-wrapper,
+.theme-wrapper {
+  width: 900px;
+  margin: 20px auto;
+  background: #fff0fa;
+  border: 5px solid #ff66c4;
+  box-shadow: 0 0 20px #ff99d6;
+  padding: 20px;
+}
+
+.profile-header h1,
+.theme-header h1 {
+  font-size: 2.5rem;
+  color: #ff1493;
+  text-shadow: 2px 2px #ffc0cb;
+  font-family: "Brush Script MT", cursive;
+}
+
+.tagline {
+  text-align: center;
+  color: #cc007a;
+  font-style: italic;
+}
+
+/* Theme content */
+.theme-content h2 {
+  color: #ff4da6;
+  font-size: 1.8rem;
+}
+
+.theme-content h3 {
+  color: #cc007a;
+  font-size: 1.3rem;
+}
+
+.personal {
+  background: #ffe0f0;
+  border-left: 5px solid #ff66c4;
+  padding: 10px;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+/* Links */
+a {
+  color: #ff1493;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff66c4;
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #cc007a;
+}
